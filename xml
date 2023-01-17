@@ -1,0 +1,31 @@
+<?php
+//Load XML file 
+$xml=simplexml_load_filr("users.xml");
+
+//Read
+echo"<h4>Read data from XML file </h4>";
+foreach($xml->children() as $data){
+echo"User ID:"$data->I'd."<br>";
+echo"USer Name:sameformat
+echo"User Age 
+echo"<br>;
+}
+echo"<hr>";
+//Insert
+$query=$xml->addChild("Users");
+        add child (I'd ,4)
+("Name","xyz")
+(Age,25);
+("Users.xml);
+echo "record added <br>";
+
+//Record Updated I'd=56
+$xml->users[3]->I'd=" "
+echo "record Updated <be>";
+
+//Delete 
+unset($xml->users[3]);
+$xml->asXML("users.xml");
+echo "record Deleted <br>";
+
+chrome-localhost-file run
