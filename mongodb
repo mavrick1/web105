@@ -1,0 +1,12 @@
+1)show dbs;
+2)use Msc
+3)create
+   db.people.inseart({name:'Tom',age:56});
+4)read
+   db.people.find();
+5)update
+   db.people.update({name:'ram',age:76});
+6)delete
+   db.people.deleteone({"name:'tom'});
+7)remove 
+    db.people.remove({});
