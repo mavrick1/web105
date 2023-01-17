@@ -1,0 +1,47 @@
+import pandas as pd
+df=pd.read_csv("StudentsPerformance.csv")
+df.head()
+
+average=df['math score'].mean()
+print(average)
+med=df['math score'].median()
+print(med)
+standard_deviataion=df['math score'].std()
+print(standard_deviataion)
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+sns.set(style="whitegrid")
+plt.figure(figsize=(10,8))
+ax = sns.boxplot(x='math score',data=df,orient="v")
+
+sns.set(style='darkgrid')
+plt.figure(figsize=(20,10))
+ax =sns.countplot(x='reading score',data=df)
+
+confidence interval:-
+df=pd.read_csv(".csv")
+df.head(5)
+df['napping'].dftype
+=dtype('int64')
+
+nightime to decimalized time
+
+df.loc[:,'night bedtime']=np.floor(df['night bedtime'])*60+np.round(df['night bedtime']%1,2)*100
+
+bedtime_nap=df[df['napping']==1]['night bedtime']
+bedtime_no_nap=df[df['napping']==0]['night bedtime']
+nap_mean_bedtime=bedtime_nap.mean()
+no_nap_mean_bedtime=bedtime_no_nap.mean()
+
+bedtime_nap.describe()
+
+bedtime_no_nap.describe()
+
+nap_se_mean_bedtime=34.445540/np.sqrt(15)
+
+no_nap_se_mean_bedtime=34.300146/np.sqrt(5)
+
+print(nap_se_mean_bedtime,no_nap_se_mean_bedtime)
+=8.893800184741428 15.339491618833499
