@@ -1,0 +1,30 @@
+#create db
+use company;
+#craeate table
+create table EMP
+(
+EmpId int(10),
+EMPName Varchar(20),
+DOJ date,
+salary int(20)
+);
+
+desc EMP;
+
+#insert values
+Insert into EMP values(
+#UPDATE VALUE
+update EMP set salary=35000 where EmpId=2;
+
+select*from EMP;
+#alt
+alter table EMP modify EMPName varchar(50) not null;
+desc EMP;
+#original table
+desc EMP;
+#DELETE VAL
+delete from EMP where EMPId=2;
+select* from EMP;
+#DELETE ENTIRE TAB
+Dropn table EMP;
+SHOW TABLES;
