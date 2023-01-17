@@ -1,0 +1,19 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+
+data=pd.read_csv('train[1].csv')
+df=pd.DataFrame(data)
+df.head(5)
+df.describe()
+df.info()
+
+sampleData=df.sample(100)
+print(sampleData.head(5))
+subset=df.sample(frac=0.5)
+rate=10
+subset=df[::rate]
+sample2=df.groupby('Age',group_keys=False).apply(lambda x:x.sample(frac=0.6))
+print('sample2',sample2.head(3))
