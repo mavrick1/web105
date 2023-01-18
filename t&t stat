@@ -1,0 +1,28 @@
+import scipy.stats as stats
+import pandas as pd
+x=[21.5,24.5,18.5,17.2,14.5,23.2,22.1,20.5,19.4,18.1,24.1,18.5]
+t_statistic,p_values=stats.ttest_1samp(a=x,popmean=20)
+print(t_statistic,p_values)
+
+h0:U=100
+h1:u>100
+level of significance alpha=0.06
+x=$130
+U=$100
+sample sd(s)=$15
+sample size(n)=25
+from t table we get
+t value=1.711
+form=130-100/15/sq 25=10
+the calculated val is greater than t value 1.711
+we fail to accept null
+
+from scipy.stats import ttest_rel
+data1=[0.873,2.817,0.121,-0.945,-0.055,-1.478,-1.637,-1.869]
+data2=[1.142,-0.432,-0.938,-0.729,-0.846,-0.157,0.500,1.183,-1.075,-0.169]
+stat, p= ttest_rel(data1,data2)
+print((stat,p))
+if p> 0.05:
+  print('probably the same distribution')
+else:
+    print('probably the different distribution')
