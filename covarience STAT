@@ -1,0 +1,6 @@
+import numpy as np
+x=[3,6,7,10,15,19]
+y=[4,4,6,10,10,14]
+data= np.array([x,y])
+covMatrix=np.cov(data)
+print(covMatrix)
