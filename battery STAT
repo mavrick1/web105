@@ -1,0 +1,8 @@
+h0:U=40
+x=44.9,U=40,S=8.9,alpha=0.05
+sample size(n)=15
+from t table we get
+tvalue=|76|
+t=x-U/(s/sq n)=2.13
+cal val is greater than tval1.761
+fail to accept
