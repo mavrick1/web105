@@ -1,0 +1,19 @@
+csv
+
+import pandas
+data=pandas.read_csv(brain csv,sep=';',na_values=".")
+data
+
+data.shape
+data.columns
+print(data['weight'])
+data[data['gender']=='Male']['VIQ'].mean()
+
+groupby_gender=data.groupby('Gender')
+for gender,value in groupby_gender['viq']:
+print((gender,value.mean()))
+
+groupby_gender.mean()
+print(data['weight'].mean())
+data['Grnder'].value_counts()
+print(data['MRI_Count"].mean())
