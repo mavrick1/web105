@@ -1,0 +1,10 @@
+from scipy.stats import chi2_contingency
+data=[[100,70,30],[140,60,20]]
+stat,p,dof,expected=chi2_contingency(data)
+#interpret p val
+alpha=0.05
+print("P value is"+ str(p))
+if p<=alpha:
+  print("Reject the null hypothesis")
+else:
+   print("accept null hypothesis") 
