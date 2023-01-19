@@ -1,0 +1,24 @@
+#Importing libraries
+from scipy.stats import f_oneway
+#performance when three groups are memory drug,placebo,No Treatment
+Memory_drug=[70,77,83,90,97]
+Placebo=[37,43,50,57,63]
+No_Treatment=[3,10,17,23,30]
+
+f_oneway (Memory_drug,Placebo, No_Treatment) 
+
+
+m=3,n=15
+ss between=zigzag n(xi-x)2
+=5[(8.3-4.50)2+(50-50)2+(16.6-50)2]
+=11155.6
+M\sb=1155.6/5577=5577.8
+ ssw=zigz(X/i-xdash)2
+   =449+436+449
+   =1334
+   M/sw=SS/w/(n-m)=1334/12=111.16
+   F/cal=MS/b/Ms/w=1155.6/111.16=50.17
+   F/crititical(3.17)=3.88
+   F/cal>F/critical
+   P<P/criticalwe rejected Ho and accept AH
+   mean of alt hypo one group is different
