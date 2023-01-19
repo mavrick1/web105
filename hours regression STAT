@@ -1,0 +1,36 @@
+ZIG(Xi-xdash)(yi-ydash)=zig xiyi-n xdas ydas
+                       =4469-10(5.4)(77.8)
+                       =267.8
+       ZIG(Xi-xdash)2=zig xi2-n(xdah)2
+                     =358-10(5.4)2
+                     =66.3
+   beta1=zig(xi-xdash)(yi-ydash)/zig(xi-xdash)2=267.8/66.4
+                                             =4.033
+   beta0=ydash-beta1xdash=77.8-4.033(5.4)
+                          =56.0218
+                          Y=B0+B1X
+                          Y=56.0218+4.033Xx
+                          
+                          
+  def calculateB(x,y,n):
+  sx=sum(x)
+  sy-sum(y)
+  sxsy=0
+  sx2=0
+  for i in range(n):
+  sxsy+=x[i]*y[i]
+  sx2+=x[i]*x[i]
+  b=(n*sxsy-sx*sy)/(n*sx2-sx*sx)
+  return b
+  def leastRegLine(x,y,n):
+    b=calculateB(x.y.n):
+   meanX=int(sum(x)/n)
+   meanY=int(sum(Y)/n)a=meanY-b*meanX
+   print("Regression line:")
+   print("Y=",'%3f'%a,"+",'%.3f'%b,"*X",sep="")
+   x=[8,9,5,5,3,7,1,8,6,2]  
+   y=[69,98,82,77,71,84,55,94,84,64]
+   n=len(x)
+   leastRegLine(X,Y,n)  
+   
+   
