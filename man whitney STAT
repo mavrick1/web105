@@ -1,0 +1,11 @@
+phase 2
+from scipy.stats import mannwhitneyu
+PLacebo=[7,5,6,4,12]
+New_Drug=[3,6,4,2,1]
+stat, p_value =mannwhitneyu(Placebo,New_Drug)
+print('Statistic%.2f,p=%.2f' %(stat,p_value))
+alpha=0.05
+if p_value<alpha:
+  print('Reject Null Hypothesis(significant difference between rwo sample)')
+else:
+   print('Accept Null Hypothesis(No significant difference between two samples)')
